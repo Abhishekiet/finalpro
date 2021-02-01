@@ -1,6 +1,8 @@
 import React, { Component } from 'react';
-import { Box, Typography, Grid, Container , Card } from '@material-ui/core/';
+import { Box, Typography, Grid, Container , Card, Button } from '@material-ui/core/';
 //import logo from '../Images/Iet/Events/2.jpg'
+import { Link } from "react-router-dom"
+
 
 class Contact extends Component{
     render()
@@ -31,6 +33,11 @@ class Contact extends Component{
 
                     </Grid>
                 </Card>
+                <div style={{marginTop:"4%"}}>
+                <Link to="/">
+                            <Button variant="contained" size="large" fullWidth color="secondary" onClick={this.Fun1} ><h6> Back To Home </h6></Button>
+                             </Link>
+                </div>
             </Container>
             </>
         )
